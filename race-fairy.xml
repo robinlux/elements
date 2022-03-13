@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+        <info>
+                <name>Fairy</name>
+                <description></description>
+                <author url="https://dnd.wizards.com/products/wild-beyond-witchlight">Wizards of the Coast</author>
+         <update version="1.0.2">        
+         <file name= "race-fairy.xml" url="https://onedrive.live.com/?cid=D4F8678EC2A82358&id=D4F8678EC2A82358%218282&parId=root&o=OneUp" />
+         </update>
+        </info>
+        
+      <element name="Fairy" type="Race" source="The Wild Beyond the Witchlight" id="ID_RACE_FAIRY" >
+         <description> 
+         <p class="flavour">The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn common as well.</p>
+
+         <h4>FAIRY TRAITS</h4>
+         <p>As a fairy, you have the following racial traits.</p>
+         <p>
+           <span class="feature">Creature Type.</span>You are a fey.<br />
+           <span class="feature">Size.</span>You are small.<br />
+           <span class="feature">Speed.</span>Your walking speed is 30ft
+           <span class="feature">Fairy Magic.</span>You know the druidcraft cantrip. Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait.<br />
+           <span class="feature">Flight.</span>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.<br />
+         </p>
+         </description>
+        <sheet display="false" />
+        <rules>
+          <grant type="Creature" id="ID_CREATURE_FEY" />
+          <grant type="Size" id="ID_SIZE_SMALL" />
+          <stat name="innate speed" value="30" bonus="base" />
+        </rules>
+      </element>
+
+      <element name="Fairy Magic" type="Racial Trait" source="The Wild Beyond the Witchlight" id="ID_RACIAL_TRAIT_FAIRY_MAGIC">
+       <description>
+        <p> You know the druidcraft cantrip.</p>
+       </description>
+       <sheet>
+        <description> You know the druidcraft cantrip.</description>
+       </sheet>
+       <rules>
+        <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+       </rules>
+      </element>
+
+</elements>
+
+
+
+           
+
